@@ -5,7 +5,7 @@ metadata:
   name:  user17-hello-world
 spec:
   to:
-    kind: Serv
+    kind: Service
 # set your user name
     name:  user17-hello-world
     weight: 100
