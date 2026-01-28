@@ -1,3 +1,4 @@
+const { log } = require('console');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -31,6 +32,7 @@ router.get('/health/readiness',function(req,res){
   console.log(`code ----> ${readiness_new}`)
   res.status(parseInt(readiness_new))
     if (readiness_new > 399){
+      console.log()
       res.send('Not Ready')
     }
     else{ res.send('Ready')}
